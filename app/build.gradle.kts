@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.bintina.kwalefarmersphonebook"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.bintina.kwalefarmersphonebook"
@@ -33,6 +33,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -44,4 +47,18 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    //coroutine dependencies
+    //comes with main dispatcher
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
+    //comes with the core functions that the language provides
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1")
+    //lifecycledependency
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+
+    //Fragments support
+    //Java language implementation
+    implementation("androidx.fragment:fragment:1.6.1")
+    //Kotlin
+    implementation("androidx.fragment:fragment-ktx:1.6.1")
 }
