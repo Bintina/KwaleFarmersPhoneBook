@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Kwale Farmers Phone Book</string>
+    <string name="kwale_farmer_namespace">Kwale Farmer</string>
+    <string name="sample_produce_list">Tomatoes, Lettuce, Goat Meat</string>
+</resources>
